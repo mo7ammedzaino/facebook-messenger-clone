@@ -1,0 +1,63 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.app__logo {
+  width: 10vw;
+  max-width: 120px;
+  padding: 10px;
+}
+
+.app__form {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #e9e9eb;
+  width: 100vw;
+  max-width: 768px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.app__form .MuiCardContent-root {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.app__formControl {
+  flex: 1;
+  padding-right: 5px;
+}
+.messages-container {
+  flex: 1;
+  width: 100%;
+  max-width: 768px;
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+@media screen and (max-width: 768px) {
+  .app__logo {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .app__logo {
+    width: 25vw;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera*/
+.messages-container::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.messages-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
